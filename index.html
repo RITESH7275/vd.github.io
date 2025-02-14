@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY dating profile</title>
+    <style>
+:root {
+            --primary: #ff4757;
+            --secondary: #2ed573;
+        }
+        body {
+            background: linear-gradient( #6fb0e5,#ef8080, #6fb0e5);
+            font-family: 'Segoe UI', system-ui;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile-container {
+            width: 90%;
+            max-width: 1000px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+            overflow: hidden;
+            position: relative;
+            margin: 2rem 0;
+        }
+        .profile-header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 4rem 2rem 8rem;
+            text-align: center;
+            position: relative;
+        }
+        .profile-photo {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            /* border: 5px solid rgb(36, 25, 25); */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            position: absolute;
+            bottom: -110px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all 0.3s;
+            background: url('your-photo.jpg') center/cover;
+        }
+        .profile-photo:hover {
+            transform: translateX(-50%) scale(1.05);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        .content-section {
+            padding: 130px 40px 40px;
+        }
+        .highlight-card {
+            background: rgba(255, 71, 87, 0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 1.5rem 0;
+            border-left: 5px solid var(--primary);
+            transition: transform 0.3s;
+        }
+        .highlight-card:hover {
+            transform: translateY(-5px);
+        }
+        .skill-badges {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+        }
+        .badge {
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.9em;
+        }
+        .compatibility-meter {
+            height: 10px;
+            background: #eee;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+        .meter-fill {
+            width: 97%;
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            animation: fill 2s ease-out;
+        }
+        .message-form {
+            display: grid;
+            gap: 15px;
+            margin-top: 2rem;
+        }
+        .red{
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            position: absolute;
+            border: 7px solid rgb(79, 74, 153);
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all 0.3s;
+            background: url('your-photo.jpg') center/cover;
+        }
+        input, textarea {
+            padding: 15px;
+            border: 2px solid #eee;
+            border-radius: 10px;
+            font-family: inherit;
+            transition: all 0.3s;
+        }
+        input:focus, textarea:focus {
+            border-color: var(--primary);
+            outline: none;
+        }
+        .send-button {
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .send-button:hover {
+            transform: scale(1.05);
+        }
+        @keyframes fill {
+            from { width: 0; }
+            to { width: 97%; }
+        }
+        .floating-heart {
+            position: absolute;
+            animation: float 3s infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        @media (max-width: 768px) {
+            .profile-container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <h1>Hey there!</h1>
+            <h1>I'm Ritesh 1st year BTech student of IIIT Ranchi</h1>
+            <h1 style="color: white; margin: 0;">Full-Stack Partner 💻❤️</h1>
+            <p style="color: rgba(255,255,255,0.9);">Looking for a Lifetime Commit() 💍</p>
+            <div class="profile-photo">
+                <img class="red" src="WhatsApp Image 2025-02-14 at 23.03.57_837fec94.jpg" alt="my profile pic">
+            </div>
+        </div>
+        <div class="content-section">
+            <div class="highlight-card">
+                <h2>Why I'm the Perfect Match 🌟</h2>
+                <ul>
+                    <li>💌Kind, responsible, and consistent—never leaves messages on 'seen'!</li>
+                    <li>🚀 5+ years experience in relationship maintenance</li>
+                    <li>🎨 Creative date night planning</li>
+                    <li>🔒 100% secure heart storage</li>
+                    <li>🌍 Passionate traveler with a dream to visit Switzerland and Singapore</li>
+                    <li>💡 Quick problem-solving in awkward situations</li>
+                </ul>
+            </div>
+            <div class="skill-badges">
+                <span class="badge">JavaScript Wizardry 🧙♂️</span>
+                <span class="badge">Python Charm 🐍✨</span>
+                <span class="badge">React to Your Needs ⚛️</span>
+                <span class="badge">Node.js of Humor 😄</span>
+            </div>
+            <div class="compatibility-meter">
+                <div class="meter-fill"></div>
+            </div>
+            <div class="highlight-card">
+                <h2>Relationship Features 🛠️</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                    <div>
+                        <h3>💞 Emotional Intelligence</h3>
+                        <p>Advanced sentiment analysis API</p>
+                    </div>
+                    <div>
+                        <h3>🗣️ Active Listening</h3>
+                        <p>Persistent WebSocket connection</p>
+                    </div>
+                    <div>
+                        <h3>🎯 Growth Mindset</h3>
+                        <p>Continuous relationship optimization</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="message-form">
+                <h2>Direct Message Integration 💌</h2>
+                <input type="text" placeholder="Your Name 🧑💻" required>
+                <input type="email" placeholder="Your Email 📧" required>
+                <textarea rows="4" placeholder="Your Sweet Message 💬..." required></textarea>
+                <div class="highlight-card">
+                    <div>
+                        <h1> Let’s Connect! 💞</h1> 
+                        <h2> Ready for an adventure with someone who codes life’s surprises? Let's chat! </h2>
+                    </div>
+                </div>
+                <button type="submit" class="send-button">Send Heartbeat 💓</button>
+            </form>
+</body>
+</html>
